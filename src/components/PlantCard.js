@@ -33,15 +33,15 @@ function PlantCard({ plant, handelDelete, removePlant }) {
   }
 
   return (
-    <li className="card" data-testid={id}>
+    <li className="card" data-testid="plant-item">
       <img src={image} alt={name} />
       <h4>{name}</h4>
-      <p>Price:</p>
-      <input
+      <p>Price: {price}</p>
+      {/* <input
         type="text"
         id="price"
         value={updatedPrice}
-        onChange={(e) => setNewPrice(e)}></input>
+        onChange={(e) => setNewPrice(e)}></input> */}
       {isStocked ? (
         <button className="primary" onClick={() => handlePlantStock()}>In Stock</button>
       ) : (
