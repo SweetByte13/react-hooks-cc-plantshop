@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect }  from "react";
 
-function Search() {
+function Search( { setSearch, search } ) {
+
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Plants:</label>
@@ -8,10 +9,12 @@ function Search() {
         type="text"
         id="search"
         placeholder="Type a name to search..."
-        onChange={(e) => console.log("Searching...")}
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
       />
     </div>
   );
 }
+
 
 export default Search;
