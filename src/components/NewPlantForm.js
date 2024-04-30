@@ -18,6 +18,7 @@ function NewPlantForm({ handleFormSubmit, plants, setPlants }) {
 console.log(newPlant)
     fetch("http://localhost:6001/plants", {
       method: "POST",
+      
       headers: {
         "Content-Type": "Application/JSON",
       },

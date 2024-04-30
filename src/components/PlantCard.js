@@ -37,11 +37,11 @@ function PlantCard({ plant, handelDelete, removePlant }) {
       <img src={image} alt={name} />
       <h4>{name}</h4>
       <p>Price: {price}</p>
-      {/* <input
+      <input
         type="text"
         id="price"
         value={updatedPrice}
-        onChange={(e) => setNewPrice(e)}></input> */}
+        onChange={(e) => setNewPrice(e)}></input>
       {isStocked ? (
         <button className="primary" onClick={() => handlePlantStock()}>In Stock</button>
       ) : (
