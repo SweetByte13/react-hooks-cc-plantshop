@@ -29,6 +29,7 @@ function PlantPage() {
       plants={plants}
       search={search} 
       setSearch={setSearch}
+      setPlants={setPlants}
       />
     </main>
   );
